@@ -6,7 +6,9 @@ from db import employees, content
 
 
 def get_email(name):
-    '''get the email of a given employee from the database'''
+    '''
+    get the email of a given employee from the database
+    '''
     name = name.lower()
     try:
         email = employees[name]
@@ -16,7 +18,9 @@ def get_email(name):
         return False, error
 
 def get_content(subject):
-    '''get the content of the email from the database given its subject'''
+    '''
+    get the content of the email from the database given its subject
+    '''
     subject = subject.lower()
     try:
         body = content[subject]
@@ -26,7 +30,9 @@ def get_content(subject):
         return False, error
 
 def send_email(name, to, subject, content):
-    '''send email give name, destination, subject and content'''
+    '''
+    send email give name, destination, subject and content
+    '''
     #Setup the MIME
     message = MIMEMultipart()
     message['From'] = config.sender_email
@@ -52,7 +58,9 @@ def send_email(name, to, subject, content):
     return answer
 
 def alexa_mail(name, subject):
-    '''extract email and content and send email given name and subject'''
+    '''
+    extract email and content and send email given name and subject
+    '''
     # get email adress
     bool_mail, email_msg = get_email(name)
     # get email content
