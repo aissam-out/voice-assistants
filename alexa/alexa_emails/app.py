@@ -4,7 +4,7 @@ import jsonify
 import requests
 import time
 import unidecode
-from alexa_emails import send_email, alexa_mail #, get_email, get_content
+from alexa_emails import alexa_mail 
 
 app = Flask(__name__)
 ask = Ask(app, "/mailexa")
