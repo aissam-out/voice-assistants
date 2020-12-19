@@ -37,4 +37,8 @@ pip install https://github.com/johnwheeler/flask-ask/archive/master.zip
 
 The code in [app.py](./app.py) is self explanatory.
 
-You can use it with ngrok or heroku to even get rid of your machine, look at my previous projects [1](https://github.com/aissam-out/chatbot/tree/master/whatsapp#get-a-public-address-to-the-app-using-ngrok) [2](https://github.com/aissam-out/ML-in-production) for further information about that.
+You can use Flask with Ngrok (or Heroku to even get rid of your machine), look at my previous projects [1](https://github.com/aissam-out/chatbot/tree/master/whatsapp#get-a-public-address-to-the-app-using-ngrok) [2](https://github.com/aissam-out/ML-in-production) for further information about that.
+
+### How to
+
+After running [app.py](./app.py) and Ngrok, you will get an **https** address that you have to copy and paste in the Endpoint of your Alexa skill in the Amazon Developer Console, as we have seen [previously](../README.md).
