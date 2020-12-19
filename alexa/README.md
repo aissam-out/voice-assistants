@@ -1,6 +1,6 @@
 # Alexa
 
-<img src="../images/alexa_logo.PNG" alt="invocation">
+<img src="../images/alexa_logo.png" alt="alexa logo">
 
 Amazon Alexa, also known simply as Alexa, is a virtual assistant AI technology developed by Amazon. It is capable of voice interaction and can also control several smart devices using itself as a home automation system [[1]](https://en.wikipedia.org/wiki/Amazon_Alexa).
 
