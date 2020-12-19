@@ -6,7 +6,7 @@ from db import employees, content
 
 
 def get_email(name):
-    '''get the email of a given employee'''
+    '''get the email of a given employee from the database'''
     name = name.lower()
     try:
         email = employees[name]
@@ -16,6 +16,7 @@ def get_email(name):
         return False, error
 
 def get_content(subject):
+    '''get the content of the email from the database given its subject'''
     subject = subject.lower()
     try:
         body = content[subject]
