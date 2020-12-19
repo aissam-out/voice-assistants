@@ -26,7 +26,7 @@ def get_content(subject):
         return False, error
 
 def send_email(name, to, subject, content):
-    '''send email'''
+    '''send email give name, destination, subject and content'''
     #Setup the MIME
     message = MIMEMultipart()
     message['From'] = config.sender_email
