@@ -9,10 +9,11 @@ from alexa_emails import alexa_mail
 app = Flask(__name__)
 ask = Ask(app, "/mailexa")
 
-# A 'hello world' message in the / route
+# A 'hello world' message in the / route - just for test
 @app.route("/")
 def hello():
     return "Hello, World!"
+
 
 @ask.launch
 def start_skill():
