@@ -22,6 +22,7 @@ def start_skill():
     # client
     return question(welcome_message)
 
+# if the intent 'remainder' is detected, send an appropriate email
 @ask.intent('remainder', mapping={'name': 'name'})
 def send_remainder(name):
     try:
