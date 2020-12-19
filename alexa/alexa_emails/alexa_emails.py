@@ -52,18 +52,25 @@ def send_email(name, to, subject, content):
     return answer
 
 def alexa_mail(name, subject):
+    '''extract email and content and send email given name and subject'''
+    # get email adress
     bool_mail, email_msg = get_email(name)
+    # get email content
     bool_content, content = get_content(subject)
 
+    # if email and content exist in the database, send email
     if (bool_mail & bool_content):
         answer = send_email(name, email_msg, subject, content)
 
+    # if email adress doesn't exist in the db, send an appropriate message
     elif ((not bool_mail) & bool_content):
         answer = email_msg
 
+    # if email content doesn't exist in the db, send an appropriate message
     elif (bool_mail & (not bool_content)):
         answer = content
 
+    # if both don't exist
     else:
         answer = "Neither {} nor {} are in the database".format(name, subject)
 
