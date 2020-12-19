@@ -14,10 +14,12 @@ ask = Ask(app, "/mailexa")
 def hello():
     return "Hello, World!"
 
-
+# the welcome message said by alexa when the application is called
 @ask.launch
 def start_skill():
     welcome_message = "Hello there, I am here to help you send emails easily .."
+    # 'question' in the following line will expect a response/ an entry from the
+    # client
     return question(welcome_message)
 
 @ask.intent('remainder', mapping={'name': 'name'})
