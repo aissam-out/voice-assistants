@@ -40,6 +40,7 @@ def send_remainder(name):
         answer = "Error !"
     return statement(answer)
 
+# if the intent 'absence' is detected, send an appropriate email
 @ask.intent('absence', mapping={'name': 'name'})
 def send_remainder(name):
     try:
