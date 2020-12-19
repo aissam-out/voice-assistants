@@ -26,7 +26,7 @@ def get_content(subject):
         return False, error
 
 def send_email(name, to, subject, content):
-
+    '''send email'''
     #Setup the MIME
     message = MIMEMultipart()
     message['From'] = config.sender_email
@@ -45,12 +45,10 @@ def send_email(name, to, subject, content):
         session.sendmail(config.sender_email, to, text)
         session.quit()
         answer = "your {} email was successfully sent to {}".format(subject, name)
-        #print('Mail Sent')
-        #return True, answer
+
     except:
         answer = "Email failed to send."
-        #print("Email failed to send.")
-        #return False, answer
+
     return answer
 
 def alexa_mail(name, subject):
