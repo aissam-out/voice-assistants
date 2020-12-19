@@ -4,11 +4,12 @@ import jsonify
 import requests
 import time
 import unidecode
-from alexa_emails import alexa_mail 
+from alexa_emails import alexa_mail
 
 app = Flask(__name__)
 ask = Ask(app, "/mailexa")
 
+# A 'hello world' message in the / route
 @app.route("/")
 def hello():
     return "Hello, World!"
