@@ -6,6 +6,7 @@ from db import employees, content
 
 
 def get_email(name):
+    '''get the email of a given employee'''
     name = name.lower()
     try:
         email = employees[name]
