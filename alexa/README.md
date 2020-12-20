@@ -28,6 +28,9 @@ Intents are kind of the actions that your Alexa skill performs. In the left hand
 
 <img src="../images/intents.PNG" alt="intents">
 
+As you might have noticed, *{name}* acts as a variable carrying the name we want to send to our back-end. In Amazon's language, those variable are called *slots*. Amazon provides a number of built in slot types, such as dates, numbers, durations, time, etc. But developers can create custom slots for variables which are specific to their skill.
+
+
 :warning: Do not forget to *save model* and *build model* every time you make changes to the model.
 
 #### 4. Endpoint
